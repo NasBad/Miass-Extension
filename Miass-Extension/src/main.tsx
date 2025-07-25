@@ -5,8 +5,6 @@ import { HashRouter } from "react-router-dom"; // 👈 ADD THIS
 
 createRoot(document.getElementById("root")!).render(
   <HashRouter>
-    {" "}
-    {/* 👈 WRAP APP IN THIS */}
     <App />
   </HashRouter>
 );
