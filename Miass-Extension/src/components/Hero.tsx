@@ -1,9 +1,12 @@
-import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-main.jpg";
+import { Button } from "../components/ui/button";
+import heroImage from "../assets/hero-main.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -26,7 +29,11 @@ const Hero = () => {
           <Button variant="hero" size="xl" className="w-full sm:w-auto">
             Shop Now
           </Button>
-          <Button variant="outline" size="xl" className="w-full sm:w-auto bg-background/10 border-background/30 text-background hover:bg-background hover:text-foreground">
+          <Button
+            variant="outline"
+            size="xl"
+            className="w-full sm:w-auto bg-background/10 border-background/30 text-background hover:bg-background hover:text-foreground"
+          >
             Learn More
           </Button>
         </div>

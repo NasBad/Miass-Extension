@@ -1,31 +1,34 @@
 import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import bundlesImage from "@/assets/bundles-category.jpg";
-import wigsImage from "@/assets/wigs-category.jpg";
-import closuresImage from "@/assets/closures-category.jpg";
+import { Button } from "../components/ui/button";
+import bundlesImage from "../assets/bundles-category.jpg";
+import wigsImage from "../assets/wigs-category.jpg";
+import closuresImage from "../assets/closures-category.jpg";
 
 const categories = [
   {
     id: 1,
     title: "Hair Bundles",
-    description: "Premium quality natural hair bundles in various textures and lengths",
+    description:
+      "Premium quality natural hair bundles in various textures and lengths",
     image: bundlesImage,
-    link: "#bundles"
+    link: "#bundles",
   },
   {
     id: 2,
     title: "Lace Wigs",
-    description: "Beautiful lace front wigs with natural hairlines and stunning styles",
+    description:
+      "Beautiful lace front wigs with natural hairlines and stunning styles",
     image: wigsImage,
-    link: "#wigs"
+    link: "#wigs",
   },
   {
     id: 3,
     title: "Closures",
-    description: "Perfect lace closures for a natural parting and seamless blend",
+    description:
+      "Perfect lace closures for a natural parting and seamless blend",
     image: closuresImage,
-    link: "#closures"
-  }
+    link: "#closures",
+  },
 ];
 
 const CategorySection = () => {
@@ -37,7 +40,8 @@ const CategorySection = () => {
             Shop by Category
           </h2>
           <p className="text-xl text-muted-foreground animate-fade-in max-w-2xl mx-auto">
-            Discover our premium collection of natural hair extensions, wigs, and accessories
+            Discover our premium collection of natural hair extensions, wigs,
+            and accessories
           </p>
         </div>
 

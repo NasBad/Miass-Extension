@@ -1,23 +1,25 @@
 import { Check, Award, Heart, Sparkles } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import productsImage from "@/assets/products-hero.jpg";
+import { Button } from "../components/ui/button";
+import productsImage from "../assets/products-hero.jpg";
 
 const features = [
   {
     icon: Award,
     title: "Premium Quality",
-    description: "100% virgin human hair sourced ethically from trusted suppliers"
+    description:
+      "100% virgin human hair sourced ethically from trusted suppliers",
   },
   {
     icon: Heart,
     title: "Natural Beauty",
-    description: "Enhancing your natural beauty with authentic textures and colors"
+    description:
+      "Enhancing your natural beauty with authentic textures and colors",
   },
   {
     icon: Sparkles,
     title: "Expert Craftsmanship",
-    description: "Meticulously crafted by skilled artisans for perfect results"
-  }
+    description: "Meticulously crafted by skilled artisans for perfect results",
+  },
 ];
 
 const benefits = [
@@ -26,7 +28,7 @@ const benefits = [
   "Chemical-free processing methods",
   "Available in various textures and lengths",
   "Long-lasting quality with proper care",
-  "Natural shine and movement"
+  "Natural shine and movement",
 ];
 
 const AboutSection = () => {
@@ -40,9 +42,10 @@ const AboutSection = () => {
               The Miass Extension Difference
             </h2>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              For over a decade, Miass Extension has been dedicated to providing premium quality 
-              natural hair extensions that enhance your beauty and boost your confidence. Our 
-              commitment to excellence sets us apart in the industry.
+              For over a decade, Miass Extension has been dedicated to providing
+              premium quality natural hair extensions that enhance your beauty
+              and boost your confidence. Our commitment to excellence sets us
+              apart in the industry.
             </p>
 
             {/* Features Grid */}
@@ -89,19 +92,27 @@ const AboutSection = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              
+
               {/* Floating Stats */}
               <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-2xl shadow-premium">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">10+</div>
-                  <div className="text-sm text-muted-foreground">Years Experience</div>
+                  <div className="text-3xl font-bold text-primary mb-1">
+                    10+
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    Years Experience
+                  </div>
                 </div>
               </div>
-              
+
               <div className="absolute -top-6 -right-6 bg-card p-6 rounded-2xl shadow-premium">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">50K+</div>
-                  <div className="text-sm text-muted-foreground">Happy Customers</div>
+                  <div className="text-3xl font-bold text-primary mb-1">
+                    50K+
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    Happy Customers
+                  </div>
                 </div>
               </div>
             </div>

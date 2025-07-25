@@ -1,6 +1,6 @@
 import { Star, ShoppingCart, Eye } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import productsImage from "@/assets/products-hero.jpg";
+import { Button } from "../components/ui/button";
+import productsImage from "../assets/products-hero.jpg";
 
 const products = [
   {
@@ -10,7 +10,7 @@ const products = [
     originalPrice: 119.99,
     rating: 4.8,
     image: productsImage,
-    category: "Bundles"
+    category: "Bundles",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const products = [
     originalPrice: 199.99,
     rating: 4.9,
     image: productsImage,
-    category: "Wigs"
+    category: "Wigs",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const products = [
     originalPrice: 129.99,
     rating: 4.7,
     image: productsImage,
-    category: "Bundles"
+    category: "Bundles",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const products = [
     originalPrice: 89.99,
     rating: 4.6,
     image: productsImage,
-    category: "Closures"
+    category: "Closures",
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ const products = [
     originalPrice: 139.99,
     rating: 4.8,
     image: productsImage,
-    category: "Bundles"
+    category: "Bundles",
   },
   {
     id: 6,
@@ -55,8 +55,8 @@ const products = [
     originalPrice: 189.99,
     rating: 4.7,
     image: productsImage,
-    category: "Wigs"
-  }
+    category: "Wigs",
+  },
 ];
 
 const ProductSection = () => {
@@ -86,7 +86,7 @@ const ProductSection = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
+
                 {/* Quick Action Buttons */}
                 <div className="absolute top-4 right-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-x-4 group-hover:translate-x-0">
                   <Button size="icon" variant="premium" className="h-10 w-10">
@@ -148,7 +148,11 @@ const ProductSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg" className="hover:bg-primary hover:text-primary-foreground">
+          <Button
+            variant="outline"
+            size="lg"
+            className="hover:bg-primary hover:text-primary-foreground"
+          >
             View All Products
           </Button>
         </div>

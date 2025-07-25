@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ShoppingCart, Menu, X, User, Search } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,16 +18,28 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a
+              href="#home"
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
               Home
             </a>
-            <a href="#shop" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a
+              href="#shop"
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
               Shop
             </a>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a
+              href="#about"
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
               About
             </a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a
+              href="#contact"
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
               Contact
             </a>
           </nav>
@@ -54,7 +66,11 @@ const Header = () => {
               className="md:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+              {isMenuOpen ? (
+                <X className="h-4 w-4" />
+              ) : (
+                <Menu className="h-4 w-4" />
+              )}
             </Button>
           </div>
         </div>
